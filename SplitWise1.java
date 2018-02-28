@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class SplitWise1
+{
+	public static void main(String[] args)
+	{
+		Scanner scr=new Scanner(System.in);
+		System.out.println("enter one string");
+		String s=scr.nextLine();
+		System.out.println();
+		String arr[]=s.split(" ");
+		int len=arr.length;
+		String s2=arr[len-1]; 		
+		for(int i=len-2; i>=0; i--) {
+			s2 =s2+ " " + arr[i];
+			
+		}
+		System.out.print(s2);
+		
+	}
+}
